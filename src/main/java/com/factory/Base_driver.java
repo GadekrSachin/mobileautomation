@@ -12,7 +12,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class Base_driver {
 
 	configur confi = new configur();
-	AppiumDriver<MobileElement> driver;
+	public static AppiumDriver<MobileElement> driver;
 	public static ThreadLocal<AppiumDriver<MobileElement>> tlDriver = new ThreadLocal<>();
 
 	public AppiumDriver<MobileElement> initializeDriver(String platformName) {

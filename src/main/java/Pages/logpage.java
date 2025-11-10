@@ -13,7 +13,7 @@ public class logpage {
 	Base_driver basedriver = new Base_driver();
 	configur confi = new configur();
 
-	public AppiumDriver<MobileElement> driver;
+	  AppiumDriver<MobileElement> driver;
 
 	public logpage(AppiumDriver<MobileElement> driver) {
 		this.driver = driver;
@@ -23,13 +23,13 @@ public class logpage {
 		basedriver.initializeDriver(confi.initialized_prop().getProperty("platform"));
 		System.out.println("done......");
 	}
-	
-	public void write_something_and_click_button () throws InterruptedException {
-		  
+
+	public void write_something_and_click_button() throws InterruptedException {
+
 //		 
-//		driver.findElement(By.id("com.bitbar.testdroid:id/editText1")).sendKeys("123");
-//		driver.findElement(By.id("com.bitbar.testdroid:id/button1")).click();
-//		Thread.sleep(3000);
+		Base_driver.driver.findElement(By.id("com.bitbar.testdroid:id/editText1")).sendKeys("123");
+		Base_driver.driver.findElement(By.id("com.bitbar.testdroid:id/button1")).click();
+		Thread.sleep(3000);
 	}
 
 }

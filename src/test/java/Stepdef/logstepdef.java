@@ -9,8 +9,9 @@ import io.cucumber.java.en.When;
 
 public class logstepdef {
 
-	logpage log = new logpage(Base_driver.getDriver());
 	Base_driver basedriver = new Base_driver();
+	logpage log = new logpage(Base_driver.getDriver());
+	
 	configur confi = new configur();
 
 	@Given("I open the calculator app")
